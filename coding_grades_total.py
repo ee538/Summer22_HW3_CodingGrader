@@ -37,8 +37,11 @@ for q_num in q_nums:
 		print("Q4:", pass_num, "/", 16, "passed | score:", q4_score)
 		total_coding_score += q4_score
 	elif q_num == 5:
-		q5_score = pass_num * 9.6
-		print("Q5:", pass_num, "/", 5, "passed | score:", q5_score)
+		if pass_num <= 10:
+			q5_score = pass_num * 4
+		elif pass_num == 11:
+			q5_score = 48
+		print("Q5:", pass_num, "/", 11, "passed | score:", q5_score)
 		total_coding_score += q5_score
 	elif q_num == 6:
 		if pass_num <= 18:
