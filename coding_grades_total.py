@@ -19,7 +19,7 @@ total_coding_score = 0.0;
 q_nums = [1, 2, 4, 5, 6]
 
 for q_num in q_nums:
-	pass_num = get_ok_num_perq("grades/Q%dres_.txt" % q_num)
+	pass_num = get_ok_num_perq("grades/Q%dres.txt" % q_num)
 
 	if q_num == 1:
 		q1_score = pass_num * 1
